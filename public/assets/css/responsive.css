@@ -1,0 +1,78 @@
+
+@media only screen and (max-width: 1440px) {
+
+}
+@media only screen and (max-width: 1200px) {
+
+}
+@media only screen and (max-width: 1024px){
+
+}
+@media only screen and (max-width: 992px) {
+
+}
+@media only screen and (max-width: 820px) {
+
+}
+@media only screen and (max-width: 768px) {
+    .menu {
+        flex-direction: column !important;
+      }
+      .rear-img{
+        display: none;
+      }
+      .top-brand-content {
+        font-size: 24px !important;
+    }
+    .carousel-control-next, .carousel-control-prev {
+      width: 12% !important;
+  }
+  .banner-Image {
+    height: 380px !important;
+    width: 100% !important;
+}
+.carousel.slide , .BrandItem .react-multi-carousel-item .cards, .BrandItem .react-multi-carousel-item .img-content, .BrandItem .react-multi-carousel-item .img-content img , .BrandItem .react-multi-carousel-item{ 
+  height: auto !important;
+}
+.stories .cards{
+  padding: 1px;
+}
+.stories .cards .img-content p{
+  display: none;
+}
+.stylestories{
+  display: flex !important;
+  justify-content: space-between;
+  align-items: center;
+  transform: rotate(-90deg);
+  position: absolute;
+  bottom: 0;
+  z-index: 9;
+  background: #fff;
+  top: 41%;
+  right: 57%;
+  width: 295px;
+  height: 43px;
+  background: #fff;
+  padding: 1rem;
+}
+.stories {
+  padding: 5px 0 !important; 
+  background: transparent !important;
+}
+.react-multi-carousel-list{
+  overflow: unset !important;
+}
+.stories, .BrandItem, .women-fashion, .men-fashion{
+  overflow: hidden;
+}
+.stylestories h5 , .stylestories p{
+  font-size: 14px;
+  font-weight: bold;
+}
+}
+@media only screen and (max-width: 576px) {
+  .p-3.fs-30.fw-bold{
+    font-size: 14px;
+  }
+}
