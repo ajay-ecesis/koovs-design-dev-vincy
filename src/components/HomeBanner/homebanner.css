@@ -49,3 +49,11 @@
     background-image: url(../../assets/images/left-arrow.png);
     background-size: auto;
 }
+.toast{
+    position: fixed;
+    bottom: 0;
+    z-index: 9;
+    width: 100%;
+    left: 0;
+    right: 0;
+}
