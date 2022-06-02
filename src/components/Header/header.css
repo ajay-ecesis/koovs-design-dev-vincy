@@ -120,4 +120,10 @@
     .main-menu ul span{
         font-weight: 600;
     }
+    .nav-menu.open ul{
+      display:block;
+    }
+    .nav-menu ul{
+      display:none;
+    }
  
