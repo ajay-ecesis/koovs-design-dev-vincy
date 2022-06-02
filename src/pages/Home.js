@@ -2,7 +2,6 @@ import React from 'react';
 import Header from '../components/Header/Header';
 import HomeBanner from '../components/HomeBanner/HomeBanner';
 import MobileStart from '../components/MobileStart/MobileStart';
-import Cart from '../components/Cart/Cart';
 import BrandItems from '../components/BrandItems/BrandItems';
 import WomenFashion from '../components/WomenFashion/WomenFashion';
 import MenFashion from '../components/MenFashion/MenFashion';
@@ -20,7 +19,6 @@ class Home extends React.Component {
       <Header/>
       <HomeBanner/>
       <MobileStart/>
-      <Cart/>
       <BrandItems/>
       <WomenFashion/>
       <MenFashion/>
