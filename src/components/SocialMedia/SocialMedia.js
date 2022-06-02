@@ -29,6 +29,7 @@ class SocialMedia extends React.Component {
             let isPlaying = this.state.isPlaying;
             let opacity = this.state.opacity;
             let controls = this.state.controls;
+            
   
             if (isPlaying) {
               this.refs.vidRef.pause();
