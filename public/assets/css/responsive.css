@@ -70,6 +70,20 @@
   font-size: 14px;
   font-weight: bold;
 }
+.toast-header{
+  height: auto !important;
+  text-align: center;
+}
+.toast-header div{
+  text-align: left !important;
+  padding-bottom: 1rem;
+}
+.toast-header .btn-dark{
+  background: transparent;
+  border: 1px solid #000;
+  color: #000;
+  width: 60%;
+}
 }
 @media only screen and (max-width: 576px) {
   .p-3.fs-30.fw-bold{

@@ -53,14 +53,14 @@ class HomeBanner extends React.Component {
                     </div>
                 </div>
                 <div class="toast show">
-                    <div class="toast-header d-flex align-items-center justify-content-between">
-                        <div>
+                    <div class="toast-header d-inline-block d-lg-flex align-items-center justify-content-between">
+                        <div className="text-dark">
                             We use cookies to ensure that we give you the best expereince on our website. If you continue, 
                             we will assume that you agree with this and accept our cookie policy. Learn more here.
                         </div>
-                        <button className="border-0 bg-transparent"><u>COOKIE SETTINGS</u></button>
-                        <button className="btn btn-outline-dark">REJECT ALL</button>
-                        <button className="btn btn-dark">ACCEPT ALL</button>
+                        <button className="border-0 bg-transparent d-none d-lg-block"><u>COOKIE SETTINGS</u></button>
+                        <button className="btn btn-outline-dark rounded-0 px-4 d-none d-lg-block">REJECT ALL</button>
+                        <button className="btn btn-dark rounded-0 px-4">ACCEPT ALL</button>
                         <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
                     </div>
                 </div>

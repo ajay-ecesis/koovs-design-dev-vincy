@@ -51,9 +51,12 @@
 }
 .toast{
     position: fixed;
-    bottom: 0;
+    bottom: -1px;
     z-index: 9;
     width: 100%;
     left: 0;
     right: 0;
+}
+.toast-header{
+    height:80px;
 }
