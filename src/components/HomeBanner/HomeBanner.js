@@ -53,10 +53,10 @@ class HomeBanner extends React.Component {
                     </div>
                 </div>
                 <div class="toast show">
-                    <div class="toast-header d-inline-block d-lg-flex align-items-center justify-content-between">
-                        <div className="text-dark">
+                    <div class="toast-header d-inline-block d-lg-flex align-items-center justify-content-between gap-3">
+                        <div className="text-dark flex-grow-1">
                             We use cookies to ensure that we give you the best expereince on our website. If you continue, 
-                            we will assume that you agree with this and accept our cookie policy. Learn more here.
+                            we will assume that you agree with this and<br/> accept our cookie policy. Learn more here.
                         </div>
                         <button className="border-0 bg-transparent d-none d-lg-block"><u>COOKIE SETTINGS</u></button>
                         <button className="btn btn-outline-dark rounded-0 px-4 d-none d-lg-block">REJECT ALL</button>
