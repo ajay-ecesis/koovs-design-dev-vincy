@@ -17,8 +17,8 @@ class Home extends React.Component {
     <div className="Home">
       
       <Header/>
-      <HomeBanner/>
       <MobileStart/>
+      <HomeBanner/>
       <BrandItems/>
       <WomenFashion/>
       <MenFashion/>

@@ -28,11 +28,11 @@ class MobileStart extends React.Component {
           };
     return(
 
-        <section className="MobileStart pb-5 d-block d-lg-none">
+        <section className="MobileStart d-block d-lg-none pb-3">
             <div className="container">
                 <div className="row g-1">
-                <h5 className="text-center py-4">Where do you want to start?</h5>
-                    <div className="row" id="carousel-slide">
+                <h5 className="py-4 fs-16">Where do you want to start?</h5>
+                    <div className="row px-0" id="carousel-slide">
                         <Carousel partialVisible={true} interval={3000} touch={true} arrows={false} responsive={responsive} renderButtonGroupOutside={true}  swipeable={true} draggable={false} autoPlay={true}
     autoPlaySpeed={2000}>
                             <div className="mx-2">

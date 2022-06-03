@@ -31,7 +31,7 @@ class BrandItems extends React.Component {
     return(
 
         <section className="BrandItem py-1 d-block d-lg-none">
-            <div className="container">
+            <div className="container px-0">
                 <div className="row g-1">
                     <div className="row" id="carousel-slide">
                         <Carousel partialVisible={true} interval={3000} touch={true} arrows={false} responsive={responsive} renderButtonGroupOutside={true}  swipeable={true} draggable={false} autoPlay={true}

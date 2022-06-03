@@ -28,7 +28,7 @@
       width: 12% !important;
   }
   .banner-Image {
-    height: 380px !important;
+    height: 400px !important;
     width: 100% !important;
 }
 .carousel.slide , .BrandItem .react-multi-carousel-item .cards, .BrandItem .react-multi-carousel-item .img-content, .BrandItem .react-multi-carousel-item .img-content img , .BrandItem .react-multi-carousel-item{ 
@@ -47,12 +47,12 @@
   transform: rotate(-90deg);
   position: absolute;
   bottom: 0;
-  z-index: 9;
+  z-index: 1;
   background: #fff;
-  top: 41%;
-  right: 57%;
-  width: 295px;
-  height: 43px;
+  top: 40%;
+  right: 52%;
+  width: 340px;
+  height: 52px;
   background: #fff;
   padding: 1rem;
 }
@@ -84,9 +84,33 @@
   color: #000;
   width: 60%;
 }
+.BrandItem .react-multi-carousel-item{
+  width: 230px !important;
+}
+.women-fashion h5, .men-fashion h5{
+  font-size: 16px;
+}
+.cart .w-75{
+  width:100% !important;
+}
 }
 @media only screen and (max-width: 576px) {
   .p-3.fs-30.fw-bold{
     font-size: 14px;
   }
+  h5{
+    font-size: 16px;
+  }
+  p{
+    font-size: 14px;
+  }
+  footer li a {
+    font-size: 14px !important;
+}
+.footer-widget ul li {
+  margin-bottom: 8px;
+}
+.footer-widget-heading p{
+  font-size: 16px;
+}
 }
