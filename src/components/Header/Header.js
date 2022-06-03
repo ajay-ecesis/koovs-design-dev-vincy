@@ -15,52 +15,37 @@ class Header extends React.Component {
         
         }
         
-        this.toggleClass=this.toggleClass.bind(this);
+        this.toggleMainMenus=this.toggleMainMenus.bind(this);
+        
+        this.toggleSubClass=this.toggleSubClass.bind(this);
+        
         
       }
+
       
-       toggleClass(e){
-           
-            let classes = 'nav-menu';
-            let els = document.getElementsByClassName('nav-menu open');
-            if(els){
-                while (els[0]) {
-                    els[0].classList.remove('open');
-                }
+        toggleMainMenus(e)
+        {
+            let viewportWidth = window.innerWidth;
+            if(viewportWidth<767)
+            {
+                e.target.classList.toggle('open-main');
             }
-            e.target.className = classes.replace('nav-menu','nav-menu open');
-
-            // var $this = $(this);
-            // els[0].classList
-            // els[0]?.classList.not(this).removeClass('open');
-            // $this.toggleClass("open");
-        //  console.log(e)
-
-      
-            // if(els){
-            //     while (els[0]) {
-            //         els[0].classList.remove('open');
-            //     }
-
-                //  e.target.classList.toggle('open');
-
-            //     for(let i = 0; i<e.target.classList.length; i++){
-            //         debugger;
-            //         if(e.target.classList[i] == 'open'){
-            //             e.target.classList.remove('open')
-            //             break;
-                        
-            //         } else{
-            //             e.target.classList.add('open')
-            //             break;
-            //         }
-            //     }
-                
-            // }
            
+        }
+      
+        toggleSubClass(e)
+        {
             
-            
-            //e.target.className = classes.replace('nav-menu','nav-menu open');
+            let els = document.getElementsByClassName('nav-sub-menu open-sub');
+            if(els[0] == undefined){
+             e.target.classList.toggle('open-sub');
+             }
+                 else if(els[0].classList.length > 1){
+                  els[0].classList.remove('open-sub');
+                 
+                  }else{
+                  e.target.classList.toggle('open-sub');
+                  }
         }
 
  
@@ -81,67 +66,79 @@ class Header extends React.Component {
 
                     <li className="main-menu">
                         <ul className="nav-menu">
-                            <span onClick={(e) =>this.toggleClass(e)}>Men</span> 
-                            <li> <Link className="nav-link" to="/view-all">View all</Link></li>
-                            <li> <Link className="nav-link" to="/new-arrivals">New arrivals</Link></li>
-                            <li className="nav-menu" onClick={(e) =>this.toggleClass(e)}>Clothing
+                            <li className="nav-main-menu" onClick={(e) =>this.toggleMainMenus(e)}>Men
                                 <ul>
-                                    <li><Link className="nav-link" to="/">All clothing </Link></li>
-                                    <li><Link className="nav-link" to="/">T-shirts, Tops, Shirts </Link></li>
-                                    <li><Link className="nav-link" to="/">Sweatshirts</Link></li>
-                                    <li><Link className="nav-link" to="/">Dresses, Skirts</Link></li>
-                                    <li><Link className="nav-link" to="/">Knitwear</Link></li>
-                                    <li><Link className="nav-link" to="/">Coats, Jackets </Link></li>
-                                    <li><Link className="nav-link" to="/">Trousers, Jeans, Shorts</Link> </li>
-                                    <li><Link className="nav-link" to="/">Underwear, Swimwear, Activewear</Link></li> 
+                                    <li> <Link className="nav-link" to="/view-all">View all</Link></li>
+                                    <li> <Link className="nav-link" to="/new-arrivals">New arrivals</Link></li>
+                                    <li className="nav-sub-menu" onClick={(e) =>this.toggleSubClass(e)}>Clothing
+                                        <ul>
+                                            <li><Link className="nav-link" to="/">All clothing </Link></li>
+                                            <li><Link className="nav-link" to="/">T-shirts, Tops, Shirts </Link></li>
+                                            <li><Link className="nav-link" to="/">Sweatshirts</Link></li>
+                                            <li><Link className="nav-link" to="/">Dresses, Skirts</Link></li>
+                                            <li><Link className="nav-link" to="/">Knitwear</Link></li>
+                                            <li><Link className="nav-link" to="/">Coats, Jackets </Link></li>
+                                            <li><Link className="nav-link" to="/">Trousers, Jeans, Shorts</Link> </li>
+                                            <li><Link className="nav-link" to="/">Underwear, Swimwear, Activewear</Link></li> 
+                                        </ul>
+                                        
+                                    </li>
+                                    <li><Link className="nav-link" to="/">Footwear</Link></li>
+                                    <li> <Link className="nav-link" to="/">Accessories</Link></li>
                                 </ul>
-                                
-                            </li>
-                            <li><Link className="nav-link" to="/">Footwear</Link></li>
-                            <li> <Link className="nav-link" to="/">Accessories</Link></li>
+                            </li> 
                         </ul>
                     </li>
 
 
                     <li className="main-menu">
-                        <ul><Link className="nav-link" to="/women"> Women </Link>
-                        <li> <Link className="nav-link" to="/view-all">View all</Link></li>
-                            <li> <Link className="nav-link" to="/new-arrivals">New arrivals</Link></li>
-                            <li className="nav-menu" onClick={(e) =>this.toggleClass(e)}>Clothing
+                        <ul className="nav-menu">
+                            <li className="nav-main-menu" onClick={(e) =>this.toggleMainMenus(e)}>Women
                                 <ul>
-                                    <li><Link className="nav-link" to="/">All clothing </Link></li>
-                                    <li><Link className="nav-link" to="/">T-shirts, Tops, Shirts </Link></li>
-                                    <li><Link className="nav-link" to="/">Sweatshirts</Link></li>
-                                    <li><Link className="nav-link" to="/">Dresses, Skirts</Link></li>
-                                    <li><Link className="nav-link" to="/">Knitwear</Link></li>
-                                    <li><Link className="nav-link" to="/">Coats, Jackets </Link></li>
-                                    <li><Link className="nav-link" to="/">Trousers, Jeans, Shorts</Link> </li>
-                                    <li><Link className="nav-link" to="/">Underwear, Swimwear, Activewear</Link></li> 
+                                    <li> <Link className="nav-link" to="/view-all">View all</Link></li>
+                                    <li> <Link className="nav-link" to="/new-arrivals">New arrivals</Link></li>
+                                    <li className="nav-sub-menu" onClick={(e) =>this.toggleSubClass(e)}>Clothing
+                                        <ul>
+                                            <li><Link className="nav-link" to="/">All clothing </Link></li>
+                                            <li><Link className="nav-link" to="/">T-shirts, Tops, Shirts </Link></li>
+                                            <li><Link className="nav-link" to="/">Sweatshirts</Link></li>
+                                            <li><Link className="nav-link" to="/">Dresses, Skirts</Link></li>
+                                            <li><Link className="nav-link" to="/">Knitwear</Link></li>
+                                            <li><Link className="nav-link" to="/">Coats, Jackets </Link></li>
+                                            <li><Link className="nav-link" to="/">Trousers, Jeans, Shorts</Link> </li>
+                                            <li><Link className="nav-link" to="/">Underwear, Swimwear, Activewear</Link></li> 
+                                        </ul>
+                                        
+                                    </li>
+                                    <li><Link className="nav-link" to="/">Footwear</Link></li>
+                                    <li> <Link className="nav-link" to="/">Accessories</Link></li>
                                 </ul>
-                                
-                            </li>
-                            <li><Link className="nav-link" to="/">Footwear</Link></li>
-                            <li> <Link className="nav-link" to="/">Accessories</Link></li>
+                            </li> 
                         </ul>
                     </li>
                     <li className="main-menu">
-                        <ul><Link className="nav-link" to="/women"> Pre Loved </Link>
-                            <li> <Link className="nav-link" to="/view-all">View all</Link></li>
-                            <li className="nav-menu" onClick={(e) =>this.toggleClass(e)}>Clothing
+                        <ul className="nav-menu">
+                            <li className="nav-main-menu" onClick={(e) =>this.toggleMainMenus(e)}>Pre Loved
                                 <ul>
-                                     <li><Link className="nav-link" to="/">All clothing </Link></li>
-                                    <li><Link className="nav-link" to="/">T-shirts, Tops, Shirts </Link></li>
-                                    <li><Link className="nav-link" to="/">Sweatshirts</Link></li>
-                                    <li><Link className="nav-link" to="/">Dresses, Skirts</Link></li>
-                                    <li><Link className="nav-link" to="/">Knitwear</Link></li>
-                                    <li><Link className="nav-link" to="/">Coats, Jackets </Link></li>
-                                    <li><Link className="nav-link" to="/">Trousers, Jeans, Shorts</Link> </li>
-                                    <li><Link className="nav-link" to="/">Underwear, Swimwear, Activewear</Link></li> 
+                                    <li> <Link className="nav-link" to="/view-all">View all</Link></li>
+                                    <li> <Link className="nav-link" to="/new-arrivals">New arrivals</Link></li>
+                                    <li className="nav-sub-menu" onClick={(e) =>this.toggleSubClass(e)}>Clothing
+                                        <ul>
+                                            <li><Link className="nav-link" to="/">All clothing </Link></li>
+                                            <li><Link className="nav-link" to="/">T-shirts, Tops, Shirts </Link></li>
+                                            <li><Link className="nav-link" to="/">Sweatshirts</Link></li>
+                                            <li><Link className="nav-link" to="/">Dresses, Skirts</Link></li>
+                                            <li><Link className="nav-link" to="/">Knitwear</Link></li>
+                                            <li><Link className="nav-link" to="/">Coats, Jackets </Link></li>
+                                            <li><Link className="nav-link" to="/">Trousers, Jeans, Shorts</Link> </li>
+                                            <li><Link className="nav-link" to="/">Underwear, Swimwear, Activewear</Link></li> 
+                                        </ul>
+                                        
+                                    </li>
+                                    <li><Link className="nav-link" to="/">Footwear</Link></li>
+                                    <li> <Link className="nav-link" to="/">Accessories</Link></li>
                                 </ul>
-                                
-                            </li>
-                            <li><Link className="nav-link" to="/">Footwear</Link></li>
-                            <li> <Link className="nav-link" to="/">Accessories</Link></li>
+                            </li> 
                         </ul>
                     </li>
                     <li className="main-menu">

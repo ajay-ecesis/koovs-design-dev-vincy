@@ -120,10 +120,20 @@
     .main-menu ul span{
         font-weight: 600;
     }
-    .nav-menu.open ul{
-      display:block;
+
+    
+
+    .nav-sub-menu.open-sub ul{
+      display:block !important;
     }
-    .nav-menu ul{
-      display:none;
+    .nav-sub-menu ul{
+      display:none !important;
     }
- 
+    @media only screen and (max-width: 768px) {
+      .nav-main-menu ul{
+        display:none;
+      }
+      .nav-main-menu.open-main ul{
+        display:block;
+      }
+    }
