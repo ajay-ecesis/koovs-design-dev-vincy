@@ -65,10 +65,9 @@ class Header extends React.Component {
                     <div className='menu-button'></div>
                 </label>
                 <ul className="menu">
-
                     <li className="main-menu">
                         <ul className="nav-menu">
-                            <li className="nav-main-menu" onClick={(e) =>this.toggleMainMenus(e)}>Men
+                            <li className="nav-main-menu w-100" onClick={(e) =>this.toggleMainMenus(e)}>Men
                                 <ul>
                                     <li> <Link className="nav-link" to="/view-all">View all</Link></li>
                                     <li> <Link className="nav-link" to="/new-arrivals">New arrivals</Link></li>
@@ -82,8 +81,7 @@ class Header extends React.Component {
                                             <li><Link className="nav-link" to="/">Coats, Jackets </Link></li>
                                             <li><Link className="nav-link" to="/">Trousers, Jeans, Shorts</Link> </li>
                                             <li><Link className="nav-link" to="/">Underwear, Swimwear, Activewear</Link></li> 
-                                        </ul>
-                                        
+                                        </ul>   
                                     </li>
                                     <li><Link className="nav-link" to="/">Footwear</Link></li>
                                     <li> <Link className="nav-link" to="/">Accessories</Link></li>
@@ -99,7 +97,7 @@ class Header extends React.Component {
                                 <ul>
                                     <li> <Link className="nav-link" to="/view-all">View all</Link></li>
                                     <li> <Link className="nav-link" to="/new-arrivals">New arrivals</Link></li>
-                                    <li className="nav-sub-menu" onClick={(e) =>this.toggleSubClass(e)}>Clothing
+                                    <li className="nav-sub-menu" onClick={(e) =>this.toggleSubClass(e)}>Clothing 
                                         <ul>
                                             <li><Link className="nav-link" to="/">All clothing </Link></li>
                                             <li><Link className="nav-link" to="/">T-shirts, Tops, Shirts </Link></li>
@@ -163,8 +161,8 @@ class Header extends React.Component {
                     <img src={koovslogo} alt="Koovs Logo"/>
                 </div>
                 <div className="d-flex align-items-center gap-4">
-                    <img src={koovsicon} height="23" alt="Koovs Search icon"/>
-                    <div><Link className="nav-link" to="/">Account</Link></div>
+                    <img src={koovsicon} height="23" alt="Koovs Search icon" className="d-none d-lg-block"/>
+                    <div><Link className="nav-link d-none d-lg-block" to="/">Account</Link></div>
                     <div><Link className="nav-link" to="/cart">Cart (0)</Link></div>
                 </div>
             </div>
