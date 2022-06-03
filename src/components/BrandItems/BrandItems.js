@@ -34,7 +34,7 @@ class BrandItems extends React.Component {
             <div className="container px-0">
                 <div className="row g-1">
                     <div className="row" id="carousel-slide">
-                        <Carousel partialVisible={true} interval={3000} touch={true} arrows={false} responsive={responsive} renderButtonGroupOutside={true}  swipeable={true} draggable={false} autoPlay={true}
+                        <Carousel infinite={true} partialVisible={true} interval={3000} touch={true} arrows={false} responsive={responsive} renderButtonGroupOutside={true}  swipeable={true} draggable={false} autoPlay={true}
     autoPlaySpeed={2000}>
                             <div className="cards overflow-hidden">
                                 <div className="img-content">
