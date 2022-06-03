@@ -35,17 +35,19 @@ class Header extends React.Component {
       
         toggleSubClass(e)
         {
+
+            e.target.classList.toggle('open-sub');
             
-            let els = document.getElementsByClassName('nav-sub-menu open-sub');
-            if(els[0] == undefined){
-             e.target.classList.toggle('open-sub');
-             }
-                 else if(els[0].classList.length > 1){
-                  els[0].classList.remove('open-sub');
+            // let els = document.getElementsByClassName('nav-sub-menu open-sub');
+            // if(els[0] == undefined){
+            //  e.target.classList.toggle('open-sub');
+            //  }
+            //      else if(els[0].classList.length > 1){
+            //       els[0].classList.remove('open-sub');
                  
-                  }else{
-                  e.target.classList.toggle('open-sub');
-                  }
+            //       }else{
+            //       e.target.classList.toggle('open-sub');
+            //       }
         }
 
  
