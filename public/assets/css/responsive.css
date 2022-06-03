@@ -28,7 +28,7 @@
       width: 12% !important;
   }
   .banner-Image {
-    height: 400px !important;
+    height: 590px !important;
     width: 100% !important;
 }
 .carousel.slide , .BrandItem .react-multi-carousel-item .cards, .BrandItem .react-multi-carousel-item .img-content, .BrandItem .react-multi-carousel-item .img-content img , .BrandItem .react-multi-carousel-item{ 
@@ -129,5 +129,9 @@
 }
 .footer-widget-heading p{
   font-size: 16px;
+}
+.banner-Image {
+  height: 400px !important;
+  width: 100% !important;
 }
 }

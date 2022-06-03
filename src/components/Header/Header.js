@@ -65,6 +65,7 @@ class Header extends React.Component {
                     <div className='menu-button'></div>
                 </label>
                 <ul className="menu">
+                    <li className="main-menu d-lg-none"><button className="btn btn-outline-dark rounded-0 px-5 mx-auto">SEARCH</button></li>
                     <li className="main-menu">
                         <ul className="nav-menu">
                             <li className="nav-main-menu w-100" onClick={(e) =>this.toggleMainMenus(e)}>Men

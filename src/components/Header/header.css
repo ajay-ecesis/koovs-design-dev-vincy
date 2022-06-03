@@ -140,6 +140,12 @@
     .nav-sub-menu, .nav-main-menu{
       cursor: pointer;
     }
+    .nav-main-menu{
+      font-weight: 600;
+    }
+    .nav-main-menu ul{
+      font-weight: 100;
+    }
     /* .nav-sub-menu::after{
       content:"\f107";
       font-family: FontAwesome;
