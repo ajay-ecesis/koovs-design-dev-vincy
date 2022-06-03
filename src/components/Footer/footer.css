@@ -8,6 +8,7 @@ ul {
 .footer-section {
   background: #fff;
   position: relative;
+  z-index: 0;
 }
 .footer-content {
   position: relative;
