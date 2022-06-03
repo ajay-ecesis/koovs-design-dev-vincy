@@ -20,6 +20,7 @@ class Header extends React.Component {
       }
       
        toggleClass(e){
+           
             let classes = 'nav-menu';
             let els = document.getElementsByClassName('nav-menu open');
             if(els){
@@ -28,6 +29,38 @@ class Header extends React.Component {
                 }
             }
             e.target.className = classes.replace('nav-menu','nav-menu open');
+
+            // var $this = $(this);
+            // els[0].classList
+            // els[0]?.classList.not(this).removeClass('open');
+            // $this.toggleClass("open");
+        //  console.log(e)
+
+      
+            // if(els){
+            //     while (els[0]) {
+            //         els[0].classList.remove('open');
+            //     }
+
+                //  e.target.classList.toggle('open');
+
+            //     for(let i = 0; i<e.target.classList.length; i++){
+            //         debugger;
+            //         if(e.target.classList[i] == 'open'){
+            //             e.target.classList.remove('open')
+            //             break;
+                        
+            //         } else{
+            //             e.target.classList.add('open')
+            //             break;
+            //         }
+            //     }
+                
+            // }
+           
+            
+            
+            //e.target.className = classes.replace('nav-menu','nav-menu open');
         }
 
  
@@ -48,7 +81,7 @@ class Header extends React.Component {
 
                     <li className="main-menu">
                         <ul className="nav-menu">
-                        <Link className="nav-link" to="/men"> Men </Link> 
+                            <span onClick={(e) =>this.toggleClass(e)}>Men</span> 
                             <li> <Link className="nav-link" to="/view-all">View all</Link></li>
                             <li> <Link className="nav-link" to="/new-arrivals">New arrivals</Link></li>
                             <li className="nav-menu" onClick={(e) =>this.toggleClass(e)}>Clothing
