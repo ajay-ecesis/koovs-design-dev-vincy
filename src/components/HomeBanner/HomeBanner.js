@@ -37,16 +37,16 @@ class HomeBanner extends React.Component {
                             <div className="row g-3 p-5">
                                 <h5 className="fw-bold">Where do you want to start?</h5>
                                 <div className="col-6">
-                                    <div className="bg-white p-2 border border-dark">Men</div>
+                                    <div className="bg-white p-2 border border-dark text-center">Men</div>
                                 </div>
                                 <div className="col-6">
-                                    <div className="bg-white p-2 border border-dark">Women</div>
+                                    <div className="bg-white p-2 border border-dark text-center">Women</div>
                                 </div>
                                 <div className="col-6">
-                                    <div className="bg-white p-2 border border-dark">Pre loved</div>
+                                    <div className="bg-white p-2 border border-dark text-center">Pre loved</div>
                                 </div>
                                 <div className="col-6">
-                                    <div className="bg-white p-2 border border-dark">Collaborations</div>
+                                    <div className="bg-white p-2 border border-dark text-center">Collaborations</div>
                                 </div>
                             </div>
                         </div>
