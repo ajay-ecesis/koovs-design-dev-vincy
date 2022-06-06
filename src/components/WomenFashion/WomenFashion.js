@@ -15,7 +15,7 @@ class WomenFashion extends React.Component {
             desktop: {
               breakpoint: { max: 3000, min: 1024 },
               items: 5,
-              partialVisibilityGutter: 30,
+              partialVisibilityGutter: 0,
               slidesToSlide: 1 // optional, default to 1.
             },
             tablet: {

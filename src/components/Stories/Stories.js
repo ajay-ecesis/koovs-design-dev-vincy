@@ -40,7 +40,7 @@ class Stories extends React.Component {
                     </div>
                     <div className="row" id="carousel-slide">
                         <Carousel infinite="true" partialVisible={true} interval={1000} touch={true} arrows={false} responsive={responsive} renderButtonGroupOutside={true}  swipeable={true} draggable={false} autoPlay={true}
-    autoPlaySpeed={2000}>
+    autoPlaySpeed={3000}>
                             <div className="cards overflow-hidden">
                                 <div className="img-content">
                                     <img src={storiesimg} className="img-fluid" alt="Koovs image"/>
