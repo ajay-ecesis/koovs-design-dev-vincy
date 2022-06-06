@@ -12,7 +12,7 @@ class Stories extends React.Component {
             desktop: {
               breakpoint: { max: 3000, min: 1024 },
               items: 3,
-              partialVisibilityGutter: 30,
+              partialVisibilityGutter: 0,
               slidesToSlide: 1 // optional, default to 1.
             },
             tablet: {
@@ -32,7 +32,7 @@ class Stories extends React.Component {
 
         <section className="stories pb-5">
             <div className="container-fluid">
-                <div className="row g-1">
+                <div className="row g-lg-1">
                     <div className="stylestories">
                         <h5 className="fw-bold">Style stories</h5>
                         <p className="d-none d-lg-block">Get inspired by our latest campaigns</p>
