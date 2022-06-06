@@ -24,7 +24,7 @@ class BrandItems extends React.Component {
             mobile: {
               breakpoint: { max: 464, min: 0 },
               items: 1,
-              partialVisibilityGutter: 140,
+              partialVisibilityGutter: 100,
               slidesToSlide: 1 // optional, default to 1.
             }
           };
@@ -52,6 +52,12 @@ class BrandItems extends React.Component {
                                 <div className="img-content">
                                     <img src={sneakersimg} className="img-fluid" alt="Koovs image"/>
                                     <p>COSMETICS</p>
+                                </div>
+                            </div>
+                            <div className="cards overflow-hidden">
+                                <div className="img-content">
+                                    <img src={sneakersimg} className="img-fluid" alt="Koovs image"/>
+                                    <p>SANDALS</p>
                                 </div>
                             </div>
                             <div className="cards overflow-hidden">

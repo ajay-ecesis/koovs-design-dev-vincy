@@ -143,7 +143,7 @@ class Header extends React.Component {
                         </ul>
                     </li>
                     <li className="main-menu">
-                        <ul>
+                        <ul className="b-height">
                             <li><Link className="nav-link" to="/">Live shopping</Link></li>
                             <li><Link className="nav-link" to="/">Influencer collaborations</Link></li>
                             <li><Link className="nav-link" to="/">Mid season sale</Link></li>

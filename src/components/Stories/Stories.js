@@ -24,14 +24,14 @@ class Stories extends React.Component {
             mobile: {
               breakpoint: { max: 464, min: 0 },
               items: 1,
-              partialVisibilityGutter: 140,
+              partialVisibilityGutter: 100,
               slidesToSlide: 1 // optional, default to 1.
             }
           };
     return(
 
         <section className="stories pb-5">
-            <div className="container px-0">
+            <div className="container-fluid">
                 <div className="row g-1">
                     <div className="stylestories">
                         <h5 className="fw-bold">Style stories</h5>
@@ -39,8 +39,8 @@ class Stories extends React.Component {
                         <p className="d-block d-lg-none mb-0"><u>View All</u></p>
                     </div>
                     <div className="row" id="carousel-slide">
-                        <Carousel partialVisible={false} interval={500} touch={true} arrows={false} responsive={responsive} renderButtonGroupOutside={true}  swipeable={true} draggable={false} autoPlay={true}
-    autoPlaySpeed={1000}>
+                        <Carousel infinite="true" partialVisible={true} interval={1000} touch={true} arrows={false} responsive={responsive} renderButtonGroupOutside={true}  swipeable={true} draggable={false} autoPlay={true}
+    autoPlaySpeed={2000}>
                             <div className="cards overflow-hidden">
                                 <div className="img-content">
                                     <img src={storiesimg} className="img-fluid" alt="Koovs image"/>

@@ -26,8 +26,8 @@ class WomenFashion extends React.Component {
             },
             mobile: {
               breakpoint: { max: 464, min: 0 },
-              items: 1,
-              partialVisibilityGutter: 140,
+              items: 2,
+              partialVisibilityGutter: 30,
               slidesToSlide: 1 // optional, default to 1.
             }
           };
@@ -36,7 +36,7 @@ class WomenFashion extends React.Component {
 
 
         
-        <section className="women-fashion py-5">
+        <section className="women-fashion py-lg-5">
         <div className="bg-light-blue"></div>
         <div className="container-fluid">
             <div className="row">
@@ -45,7 +45,7 @@ class WomenFashion extends React.Component {
                     <p className="fw-bold"><u>View All</u></p>
                 </div>
                 <div className="row" id="carousel-slide">
-                <Carousel partialVisible={true} interval={3000} touch={true} arrows={false} responsive={responsive} renderButtonGroupOutside={true}  swipeable={true} draggable={false} autoPlay={true}
+                <Carousel infinite="true" partialVisible={true} interval={3000} touch={true} arrows={false} responsive={responsive} renderButtonGroupOutside={true}  swipeable={true} draggable={false} autoPlay={true}
   autoPlaySpeed={2000}>
                     <div className="cards overflow-hidden">
                         <div className="bg-grey">

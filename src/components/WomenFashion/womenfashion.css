@@ -27,7 +27,7 @@
 .bg-grey:hover{
     box-shadow: 0 10px 12px -7px #ccc;
 } */
-.women-fashion .container-fluid, .men-fashion .container-fluid{
+.women-fashion .container-fluid, .men-fashion .container-fluid , .stories .container-fluid{
     padding-left: 15rem;
 }
 .react-multi-carousel-list{

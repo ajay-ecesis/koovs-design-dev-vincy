@@ -48,7 +48,7 @@
     display: block;
     background-color: #000;
     position: absolute;
-    height: 4px;
+    height: 2px;
     width: 30px;
     transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
     border-radius: 2px;
@@ -92,7 +92,7 @@
       justify-content: center;
       align-items: center;
       background: #fff;
-      z-index: 2;
+      z-index: 3;
     }
     #menu-toggle ~ .menu .main-menu {
       height: 0;
@@ -146,8 +146,8 @@
     .nav-main-menu ul{
       font-weight: 100;
     }
-    .nav-sub-menu::after{
+    /* .nav-sub-menu::after{
       content:"\f107";
       font-family: FontAwesome;
-    }
+    } */
     /* .fa-arrow-down:before{content:"\f063"} */

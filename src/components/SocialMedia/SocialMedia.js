@@ -66,8 +66,8 @@ class SocialMedia extends React.Component {
             },
             mobile: {
               breakpoint: { max: 464, min: 0 },
-              items: 3,
-              partialVisibilityGutter: 10,
+              items: 2,
+              partialVisibilityGutter: 80,
               slidesToSlide: 1 // optional, default to 1.
             }
           };
@@ -107,8 +107,8 @@ class SocialMedia extends React.Component {
                         <div className="future-collaboration d-block d-lg-none pb-5">
                             <h5><b>Future <i>collaborations</i></b></h5>
                             <p>Collections you can't afford to miss</p>
-                            <div className="row" id="carousel-slide">
-                                <Carousel partialVisible={true} interval={3000} touch={true} arrows={false} responsive={responsive} renderButtonGroupOutside={true}  swipeable={true} draggable={false} autoPlay={true}
+                            <div className="row  ms-2 ms-lg-0 g-5" id="carousel-slide">
+                                <Carousel infinite="true" partialVisible={true} interval={3000} touch={true} arrows={false} responsive={responsive} renderButtonGroupOutside={true}  swipeable={true} draggable={false} autoPlay={true}
             autoPlaySpeed={2000}>
                                     <div className="cards overflow-hidden">
                                         <div className="img-content">
