@@ -110,7 +110,7 @@
 .nav-main-menu ul{
   margin-left: 1.5rem;
 }
-.women-fashion .container-fluid, .men-fashion .container-fluid , .stories .container-fluid{
+.women-fashion .container-fluid #carousel-slide, .men-fashion .container-fluid #carousel-slide, .stories .container-fluid #carousel-slide{
   padding-left: 1rem !important;
 }
 .future-collaboration{
@@ -124,6 +124,12 @@
 }
 .MobileStart .mx-2 .fs-14{
   font-size: 12px !important;
+}
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  bottom: 8rem !important;
+}
+.carousel.slide {
+  margin: 1rem 0 0 !important;
 }
 }
 @media only screen and (max-width: 576px) {

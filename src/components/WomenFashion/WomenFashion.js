@@ -36,7 +36,7 @@ class WomenFashion extends React.Component {
 
 
         
-        <section className="women-fashion py-lg-5">
+        <section className="women-fashion py-lg-5 pt-4">
         <div className="bg-light-blue"></div>
         <div className="container-fluid">
             <div className="row">

@@ -12,7 +12,7 @@ class Footer extends React.Component {
 
         <footer className="footer-section">
             <div className="container-fluid">
-                <div className="footer-content px-lg-4">
+                <div className="footer-content">
                     <div className="row py-lg-5 py-4">
                         <div className="col-xl-3 col-lg-4 col-12 pb-3">
                             <div className="footer-widget">
