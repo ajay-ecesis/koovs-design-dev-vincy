@@ -22,7 +22,7 @@ class MobileStart extends React.Component {
             mobile: {
               breakpoint: { max: 464, min: 0 },
               items: 3,
-              partialVisibilityGutter: 140,
+              partialVisibilityGutter: 40,
               slidesToSlide: 1 // optional, default to 1.
             }
           };
@@ -35,16 +35,16 @@ class MobileStart extends React.Component {
                     <div className="row ps-3 px-lg-0" id="carousel-slide">
                         <Carousel interval={3000} touch={true} arrows={false} responsive={responsive} renderButtonGroupOutside={true}  swipeable={true} draggable={false} autoPlay={true}
     autoPlaySpeed={2000}>
-                            <div className="mx-2">
+                            <div className="mx-1">
                                 <div className="bg-white p-2 border border-dark text-center fs-14">Men</div>
                             </div>
-                            <div className="mx-2">
+                            <div className="mx-1">
                                 <div className="bg-white p-2 border border-dark text-center fs-14">Women</div>
                             </div>
-                            <div className="mx-2">
+                            <div className="mx-1">
                                 <div className="bg-white p-2 border border-dark text-center fs-14">Collaboration</div>
                             </div>
-                            <div className="mx-2">
+                            <div className="mx-1">
                                 <div className="bg-white p-2 border border-dark text-center fs-14">Loved</div>
                             </div>
                         </Carousel>
