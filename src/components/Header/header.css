@@ -146,8 +146,8 @@
     .nav-main-menu ul{
       font-weight: 100;
     }
-    /* .nav-sub-menu::after{
+    .nav-sub-menu::after{
       content:"\f107";
       font-family: FontAwesome;
-    } */
+    }
     /* .fa-arrow-down:before{content:"\f063"} */

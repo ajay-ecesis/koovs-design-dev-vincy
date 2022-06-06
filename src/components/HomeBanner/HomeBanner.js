@@ -34,8 +34,8 @@ class HomeBanner extends React.Component {
                     </div>
                     <div className="col-12 col-lg-6 align-self-center d-none d-lg-block">
                         <div className="category-carousel">
-                            <div className="row g-3 text-center p-5">
-                                <h5>Where do you want to start?</h5>
+                            <div className="row g-3 p-5">
+                                <h5 className="fw-bold">Where do you want to start?</h5>
                                 <div className="col-6">
                                     <div className="bg-white p-2 border border-dark">Men</div>
                                 </div>

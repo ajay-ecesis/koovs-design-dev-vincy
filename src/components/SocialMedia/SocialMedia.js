@@ -78,7 +78,7 @@ class SocialMedia extends React.Component {
                 <div className="row">
                     <div className="col-12 col-lg-6">
                         <div className="future-collaboration pb-5 d-none d-lg-block">
-                            <h5><b>Future <i>collaborations</i></b></h5>
+                            <h5><b>Future <i>collaborations</i></b></h5><br/>
                             <div className="d-flex gap-4 align-items-center">
                                 <h5>28/04</h5>   
                                 <h5>Ira Voo</h5> 
@@ -150,7 +150,7 @@ class SocialMedia extends React.Component {
                                 </button>
                             </div>
                             <div className="col-12 col-lg-6">
-                                <div className="px-0 py-4 p-lg-4">
+                                <div className="px-0 py-4 py-lg-0 px-lg-4">
                                     <h5 className="fw-bold">Live with Hannie</h5>   
                                     <p className="py-4">
                                     Spend the afternoon with photographer, Hannie as he lorem ipsum dolor sit amet, consectetur adipiscing elit, 

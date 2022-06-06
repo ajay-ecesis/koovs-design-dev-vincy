@@ -34,13 +34,25 @@ class Stories extends React.Component {
             <div className="container px-0">
                 <div className="row g-1">
                     <div className="stylestories">
-                        <h5>Style stories</h5>
+                        <h5 className="fw-bold">Style stories</h5>
                         <p className="d-none d-lg-block">Get inspired by our latest campaigns</p>
                         <p className="d-block d-lg-none mb-0"><u>View All</u></p>
                     </div>
                     <div className="row" id="carousel-slide">
-                        <Carousel partialVisible={true} interval={3000} touch={true} arrows={false} responsive={responsive} renderButtonGroupOutside={true}  swipeable={true} draggable={false} autoPlay={true}
-    autoPlaySpeed={2000}>
+                        <Carousel partialVisible={false} interval={500} touch={true} arrows={false} responsive={responsive} renderButtonGroupOutside={true}  swipeable={true} draggable={false} autoPlay={true}
+    autoPlaySpeed={1000}>
+                            <div className="cards overflow-hidden">
+                                <div className="img-content">
+                                    <img src={storiesimg} className="img-fluid" alt="Koovs image"/>
+                                    <p className="fw-bold">Back to the 00’s</p>
+                                </div>
+                            </div>
+                            <div className="cards overflow-hidden">
+                                <div className="img-content">
+                                    <img src={storiesimg} className="img-fluid" alt="Koovs image"/>
+                                    <p className="fw-bold">Back to the 00’s</p>
+                                </div>
+                            </div>
                             <div className="cards overflow-hidden">
                                 <div className="img-content">
                                     <img src={storiesimg} className="img-fluid" alt="Koovs image"/>

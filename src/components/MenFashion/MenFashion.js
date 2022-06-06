@@ -42,7 +42,7 @@ class MenFashion extends React.Component {
                 <div className="row">
                     <div className="d-flex justify-content-between">
                         <h5 className="fw-bold">Men</h5>
-                        <p><u>View All</u></p>
+                        <p className="fw-bold"><u>View All</u></p>
                     </div>
                     <div className="row" id="carousel-slide">
                         <Carousel partialVisible={true} interval={3000} touch={true} arrows={false} responsive={responsive} renderButtonGroupOutside={true}  swipeable={true} draggable={false} autoPlay={true}
