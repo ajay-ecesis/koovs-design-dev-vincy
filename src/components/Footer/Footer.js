@@ -63,8 +63,8 @@ class Footer extends React.Component {
                                     <p>Sign up for email updates and promotions</p>  
                                 </div>
                                 <div className="form-floating">
-                                    <input type="password" className="form-control" id="floatingPassword" placeholder="Password" />
-                                    <label for="floatingPassword">Password</label>
+                                    <input type="email" className="form-control" id='floatingline'  placeholder="Password" />
+                                    <label for="floatingEmail" id="floatingEmail">Enter Email</label>
                                 </div>
                             </div>
                             <div className="footer-widget d-block d-lg-none">
@@ -80,7 +80,7 @@ class Footer extends React.Component {
                             </div>
                         </div>
                     </div>
-                    <hr className="my-0"/>
+                    <hr id='floatingborder'/>
                     <div className="row pb-2 pt-2 align-items-center">
                         <div className="col-xl-4 col-lg-4 col-md-12 order-1 order-lg-0">
                             <p className="mb-0 mb-content">© Koovs.com 2022. All rights reserved.</p>

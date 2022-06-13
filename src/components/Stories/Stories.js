@@ -38,7 +38,7 @@ class Stories extends React.Component {
                         <p className="d-none d-lg-block">Get inspired by our latest campaigns</p>
                         <p className="d-block d-lg-none mb-0"><u>View All</u></p>
                     </div>
-                    <div className="row" id="carousel-slide">
+                    <div className="row stories" id="carousel-slide">
                         <Carousel infinite="true" partialVisible={true} interval={1000} touch={true} arrows={false} responsive={responsive} renderButtonGroupOutside={true}  swipeable={true} draggable={false} autoPlay={true}
     autoPlaySpeed={3000}>
                             <div className="cards overflow-hidden">

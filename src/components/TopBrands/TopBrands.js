@@ -14,7 +14,7 @@ class TopBrands extends React.Component {
                 </div>
             </div>
             <div className="container">
-                <div className="top-brand-content py-0 py-lg-5">
+                <div className="top-brand-content py-3 pl-lg-4 py-lg-7">
                     361 Degree, AMON, 
                     ATTIC SALT, Blue Saint, Bollywoo, DIWAAH, Freakins, Good Stuff, KOOVS, LC Waikiki, New Look, Oxolloxo, ONE / ZERO BY KOOVS, Peak. 
                 </div>

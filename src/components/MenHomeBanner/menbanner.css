@@ -1,0 +1,15 @@
+.category-carousel{
+    margin-top:31px;
+}
+/* .carousel-indicators{
+    margin-bottom:76px;
+} */
+.centered {
+    position: absolute;
+    align-items: center;
+    margin-top:8px;
+   
+  }
+.category-carousel img{
+    position:relative;
+}

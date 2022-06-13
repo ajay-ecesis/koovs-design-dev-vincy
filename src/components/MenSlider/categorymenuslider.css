@@ -1,0 +1,7 @@
+.category_menu_slider{
+
+    background-color: yellow;
+}
+.category_menu_slider div{
+    flex-direction: row;
+}

@@ -1,6 +1,7 @@
 import './App.css';
 import React from 'react';
 import Home from './pages/Home';
+import HomePageMen from './pages/HomePageMen'
 import ProductCart from './pages/ProductCart';
 import {
   BrowserRouter,
@@ -18,6 +19,7 @@ class App extends React.Component {
         <Routes>
         <Route exact path="/" element={<Home/>} />
         <Route path="cart" element={<ProductCart/>} />
+        <Route path="/men" element={<HomePageMen/>} />
         </Routes>
         </BrowserRouter>
       

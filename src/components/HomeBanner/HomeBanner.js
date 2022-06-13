@@ -3,8 +3,7 @@ import { Carousel } from 'react-bootstrap';
 import './homebanner.css';
 import bannerimg from '../../assets/images/koovs_homebanner.png';
 import storiesimg from '../../assets/images/Screenshot.png';
-
-
+import {Link} from "react-router-dom";
 class HomeBanner extends React.Component {
     render()
     {
@@ -14,12 +13,11 @@ class HomeBanner extends React.Component {
             <div className="container-fluid">
                 <div className="row">
                     <div className="col-12 col-lg-6">
-                        <Carousel controls={true} interval={700} fade>
+                        <Carousel controls={true} interval={700}>
                         <Carousel.Item>
               
                         <div className="banner-Image"><img src={bannerimg} className="w-100 img-fluid" alt="DMG banner Image"/></div>
-                      
-                       
+                    
                         </Carousel.Item>
                         <Carousel.Item>
                         <div className="banner-Image"><img src={storiesimg} alt="DMG banner Image" className="w-100 img-fluid"/></div>
@@ -37,7 +35,7 @@ class HomeBanner extends React.Component {
                             <div className="row g-3 p-5">
                                 <h5 className="fw-bold">Where do you want to start?</h5>
                                 <div className="col-6">
-                                    <div className="bg-white p-2 border border-dark text-center">Men</div>
+                                    <div className="bg-white p-2 border border-dark text-center"><Link className="Men" to="/men">Men</Link>  </div>
                                 </div>
                                 <div className="col-6">
                                     <div className="bg-white p-2 border border-dark text-center">Women</div>

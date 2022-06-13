@@ -21,3 +21,8 @@ video{
 .stylestories{
     display: block;
 }
+.stories .react-multi-carousel-list{
+
+    padding-left:8px;
+
+}
